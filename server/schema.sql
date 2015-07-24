@@ -1,9 +1,13 @@
-CREATE DATABASE chat;
+/*CREATE DATABASE chat;*/
 
 USE chat;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `username` int(11) unsigned NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 /* Create other tables and define schemas for them here! */
