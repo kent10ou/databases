@@ -3,16 +3,19 @@
 USE chat;
 
 CREATE TABLE messages (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` int(11) unsigned NOT NULL,
-  `message` varchar(255) NOT NULL,
-  `created` datetime NOT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `user id` int NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `roomname` varchar(20),
   PRIMARY KEY (`id`)
 );
 
-/* Create other tables and define schemas for them here! */
 
-
+CREATE TABLE users (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+);
 
 
 /*  Execute this file from the command line by typing:
